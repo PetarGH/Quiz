@@ -1,0 +1,10 @@
+{
+    "value": {
+      "id": 18,
+      "name": "Mock user",
+      "email": "mockuser@example.com",
+      "age": 25,
+      "address": "123 Mock St",
+      "userType": true
+    }
+  }

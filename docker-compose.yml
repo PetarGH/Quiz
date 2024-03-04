@@ -1,0 +1,48 @@
+version: "3"
+
+services:
+  frontend:
+    image: petargh2/frontend-react:latest
+    restart: always
+    ports:
+      - 3000:3000
+    networks:
+      - netter
+
+  backend:
+    image: petargh2/backend:latest
+    restart: always
+    ports:
+      - 8080:80
+      - 4434:443
+    networks:
+      - netter
+
+  db:
+    image: mysql
+    restart: always
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_DATABASE: 'dbi477163'
+      MYSQL_USER: 'dbi477163'
+      MYSQL_PASSWORD: 'Petar2002-'
+      MYSQL_ROOT_PASSWORD: 'Petar2002-'
+      MYSQL_ROOT_HOST: '%'
+    volumes:
+      - /home/pesho/data/:/var/lib/mysql
+    networks:
+      - netter
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 4444:80
+    environment:
+      MYSQL_USERNAME: 'dbi477163'
+      MYSQL_ROOT_PASSWORD: 'Petar2002-'
+    networks:
+      - netter
+
+networks:
+  netter:

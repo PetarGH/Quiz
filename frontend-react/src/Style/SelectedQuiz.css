@@ -1,0 +1,39 @@
+.headers-info {
+    color: white;
+}
+
+body {
+    background-color: #1b1b1b;
+}
+
+.answer-info {
+    color: #ffd700; 
+}
+
+.question-info {
+    color: #0004ff; 
+}
+
+.align-text {
+    text-align: center;
+}
+
+.no-info {
+    color: #ff0000; 
+}
+
+.submit-button {
+    background-color: #4caf50; 
+    color: white; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+  }
+  
+  .submit-button:disabled {
+    background-color: #dddddd; 
+    color: #666666; 
+    cursor: not-allowed; 
+  }

@@ -1,0 +1,12 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .list-group-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  

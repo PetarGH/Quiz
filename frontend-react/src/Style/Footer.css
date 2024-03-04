@@ -1,0 +1,24 @@
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0f172a;
+    color: #fff; 
+    padding: 20px;
+  }
+  
+  .contact-info, .quizzturn-info {
+    text-align: left;
+  }
+  
+  .header-info {
+    color: #ffd700; 
+  }
+  
+  p {
+    margin: 8px 0;
+  }
+
+  .quizz-turn {
+    float: right;
+  }
